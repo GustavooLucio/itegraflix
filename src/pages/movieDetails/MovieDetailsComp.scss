@@ -1,0 +1,76 @@
+.movie-title {
+  color: #e7e4e4;
+  margin: 3rem;
+}
+
+.movie-container-infos {
+  margin: 3rem;
+  display: grid;
+  grid-template-areas:
+    "a b"
+    "a c"
+    "a d";
+  gap: 10px;
+  grid-template-columns: 0.2fr 1fr;
+  align-items: center;
+}
+.movie-first {
+  grid-area: a;
+}
+.movie-first img {
+  display: flex;
+  height: 100%;
+  padding: 25px;
+}
+.movie-second {
+  display: flex;
+  grid-area: b;
+
+  span {
+    color: #919191;
+    margin-left: 0.2rem;
+    font-size: 2rem;
+  }
+  .rate-number {
+    color: #fb8200;
+    margin-right: 0.8rem;
+  }
+  .star-symbol {
+    font-size: 2rem;
+    color: #fb8200;
+    display: flex;
+    justify-content: space-between;
+  }
+  .votes-number {
+    color: #919191;
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.resume {
+  color: #e7e4e4;
+  font-size: 1.3rem;
+  font-weight: 400;
+  grid-area: c;
+  width: 25rem;
+  text-align: justify;
+}
+
+.cast {
+  grid-area: d;
+  display: flex;
+  gap: 15px;
+}
+
+.cast-portrait {
+  display: grid;
+  grid-template-rows: 0.8fr 0.2fr;
+
+  text-align: center;
+}
+
+.cast img {
+  height: 30vh;
+}
